@@ -15,7 +15,7 @@ module tt_um_Dany_IEEE(
   wire hsync, vsync, display_on;
   wire [9:0] hpos, vpos;
 
-  hvsync_generator hvsync_gen (
+  hvsync_generator hvsync_gen(
     .clk(clk), .reset(~rst_n),
     .hsync(hsync), .vsync(vsync),
     .display_on(display_on),
